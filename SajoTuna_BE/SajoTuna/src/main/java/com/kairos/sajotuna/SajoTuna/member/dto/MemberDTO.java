@@ -6,25 +6,25 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Getter
 @Setter
-@NoArgsConstructor
 @ToString
+@NoArgsConstructor
 public class MemberDTO {
-    private String user_id;
+    private String userId;
     private String name;
     private String password;
-    private int student_id;
+    private String password_check;
+    private int studentId;
     private int authority;
 
-    public static MemberDTO toMemberDTO(MemberEntity memberEntity){
+    public MemberDTO toMemberDTO(MemberEntity memberEntity) {
         MemberDTO memberDTO = new MemberDTO();
-        memberDTO.setUser_id(memberEntity.getUser_id());
-        memberDTO.setName(memberEntity.getName());
+        memberDTO.setUserId(memberEntity.getUserId());
         memberDTO.setPassword(memberEntity.getPassword());
-        memberDTO.setStudent_id(memberEntity.getStudent_id());
-        memberDTO.setAuthority(memberDTO.getAuthority());
+        memberDTO.setName(memberEntity.getName());
+        memberDTO.setStudentId(memberEntity.getStudentId());
+        memberDTO.setStudentId(memberEntity.getAuthority());
         return memberDTO;
     }
 }
