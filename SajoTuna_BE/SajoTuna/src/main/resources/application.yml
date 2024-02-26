@@ -2,7 +2,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://orion.mokpo.ac.kr:8314/sajotuna
+    url: jdbc:mysql://orion.mokpo.ac.kr:8314/fourjotuna
     username: root
     password: ScE1234**
 
